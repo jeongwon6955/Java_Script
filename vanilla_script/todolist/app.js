@@ -1,6 +1,6 @@
-let inputBox = document.getElementById('inputField');  // 할 일 입력창
-let addToDo = document.getElementById('addToDo');      // 버튼
-let toDoList = document.getElementById('toDoList');    // 할 일 리스트창
+const inputBox = document.getElementById('inputField');  // 할 일 입력창
+const addToDo = document.getElementById('addToDo');      // 버튼
+const toDoList = document.getElementById('toDoList');    // 할 일 리스트창
 
 addToDo.addEventListener('click', function() {
     const list = document.createElement('li');
@@ -14,6 +14,7 @@ addToDo.addEventListener('click', function() {
         inputBox.value = ''
     }
 
+    
     list.addEventListener('click', function() {
         list.style.textDecoration = "line-through"
     })
