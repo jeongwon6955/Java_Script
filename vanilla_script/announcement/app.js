@@ -2,10 +2,12 @@ const login = document.querySelector(".login")
 const modal = document.querySelector(".modal")
 const closebtn = document.querySelector(".close > i")
 
+// 첫번째 로그인창 이벤트트
 login.addEventListener("click", function() {
     modal.classList.add("open-modal")
 })
 
+// 
 closebtn.addEventListener("click", function() {
     modal.classList.remove("open-modal")
 })
@@ -15,6 +17,7 @@ const inputbox = document.querySelector(".modal-login > input")
 const side = document.querySelector(".sidebar")
 const side1 = document.querySelector(".sidebar1")
 const close1btn = document.querySelector(".close1 > i")
+const close2btn = document.querySelector(".close2 > i")
 
 login1.addEventListener("click", function() {
 
@@ -30,7 +33,10 @@ login1.addEventListener("click", function() {
 })
 
 close1btn.addEventListener("click", function() {
-    side1.classList.remove("show-sidebar1")
+    side1.classList.remove("show-sidebar1" )
+})
+close2btn.addEventListener("click", function() {
+    side.classList.remove("show-sidebar")
 })
 
 const todo = document.querySelector(".todo")
