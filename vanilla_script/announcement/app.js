@@ -19,7 +19,7 @@ const side1 = document.querySelector(".sidebar1")
 const close1btn = document.querySelector(".close1 > i")
 const close2btn = document.querySelector(".close2 > i")
 
-// 두번째 로그인창 이벤트(사이드바1,2 여는 이벤트트)
+// 두번째 로그인창 이벤트(사이드바1,2 여는 이벤트)
 login1.addEventListener("click", function() {
 
     if(inputbox.value === "choijeongwon") {
