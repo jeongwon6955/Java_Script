@@ -97,6 +97,7 @@
 }
 .show-sidebar {
     width: 100%;
+    z-index: 10;
 }
 .show-sidebar .todo {
     display: block;
@@ -117,6 +118,9 @@
 .show-sidebar1 .close1 {
     display: block;
 }
+.show-sidebar1 .media-btn {
+    display: block;
+}
 .todo {
     width: calc(100% - 600px);
     display: none;
@@ -134,10 +138,16 @@
     width: 370px;
     height: 30px;
     padding: 10px;
+    border-radius: 10px;
 }
 .close1 {
     font-size: 30px;
     color: red;
+    padding: 30px;
+    display: none;
+}
+.media-btn {
+    font-size: 30px;
     padding: 30px;
     display: none;
 }

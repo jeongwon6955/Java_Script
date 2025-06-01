@@ -35,7 +35,8 @@ login1.addEventListener("click", function() {
 
 // 두번째 사이드바 닫는 이벤트
 close1btn.addEventListener("click", function() {
-    side1.classList.remove("show-sidebar1" )
+    side1.classList.remove("show-sidebar1")
+    side.style.cssText = "none"
 })
 
 // 첫번째 사이드바 닫는 이벤트
@@ -59,4 +60,10 @@ btn.addEventListener("click", function() {
         todo.appendChild(list)
         inputbtn.value = ""
     }
+})
+const media = document.querySelector(".media-btn")
+
+media.addEventListener("click", function() {
+    side.classList.add  ("show-sidebar")
+    side.style.cssText = "width: 500px"
 })
