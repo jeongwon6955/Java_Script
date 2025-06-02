@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  width: 1800px;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.box {
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.slides > .box:nth-child(1) {
+    background-color: aqua;
+}
+.slides > .box:nth-child(2) {
+    background-color: aquamarine;
+}
+.slides > .box:nth-child(3) {
+    background-color: antiquewhite;
+}

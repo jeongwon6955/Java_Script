@@ -67,3 +67,28 @@ media.addEventListener("click", function() {
     side.classList.add  ("show-sidebar")
     side.style.cssText = "width: 500px"
 })
+
+// 이미지 슬라이드
+
+let currentIndex = 0
+const slide = document.querySelectorAll(".slide")
+const slides = document.querySelector(".slides")
+const total = slide.length
+
+let direction = 1
+
+function showNextSlide() {
+    slides.style.transform = `translateX(-${currentIndex * 1536}px)`
+
+    currentIndex += direction
+
+    if(currentIndex === total -1) {
+        direction = -1
+    }else if(currentIndex === 0) {
+        direction = 1
+    }
+}
+
+showNextSlide()
+
+setInterval(showNextSlide,2000)

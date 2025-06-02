@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.slides {
+    width: 2400px;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+}
+.box {
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: aqua;
+}

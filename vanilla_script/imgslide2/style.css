@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+}
+.slides {
+    width: 1800px;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+.slide {
+    width: 600px;
+    height: 100%;
+}
+button {
+    width: 100px;
+    height: 70px;
+    font-size: 25px;
+    border: none;
+    background-color: white;
+}

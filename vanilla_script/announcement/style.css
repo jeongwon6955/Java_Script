@@ -3,13 +3,33 @@
     padding: 0;
 }
 .loginbox {
-    width: 100%;
+    width: 1536px;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.slides {
+    width: calc(1536px * 3);
+    height: 100vh;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.slide {
+    width: 1536px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.slide:nth-child(1) {
+    background-color: aqua;
+}
+.slide:nth-child(2) {
     background-color: aquamarine;
-    position: relative;
+}
+.slide:nth-child(3) {
+    background-color: bisque;
 }
 .login {
     font-size: 50px;
