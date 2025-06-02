@@ -22,8 +22,7 @@ showNextSlide()
 let autoSlide = setInterval(showNextSlide, 2000)
 
 // 🎯 버튼 기능 추가
-const prev = document.getElementById("prev")
-prev.addEventListener("click", function () {
+document.getElementById("prev").addEventListener("click", () => {
     clearInterval(autoSlide) // 자동 슬라이드 멈춤
     currentIndex = Math.max(0, currentIndex - 1)
     slides.style.transform = `translateX(-${currentIndex * 600}px)`
@@ -36,11 +35,3 @@ document.getElementById("next").addEventListener("click", () => {
     slides.style.transform = `translateX(-${currentIndex * 600}px)`
     autoSlide = setInterval(showNextSlide, 2000)
 })
-
-const input1 = document.querySelector(".input1")
-const input2 = document.querySelector(".input2")
-const input3 = document.querySelector(".input3")
-
-if(currentIndex === 0) {
-    input1.click
-}

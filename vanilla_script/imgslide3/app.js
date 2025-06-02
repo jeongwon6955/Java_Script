@@ -2,6 +2,7 @@ const slides = document.querySelector('.slides');
   const slideImages = document.querySelectorAll('.slide');
   const totalSlides = slideImages.length;
   let currentIndex = 0;
+  //console.log(slideImages)
 
   function showSlide(index) {
     const slideWidth = slideImages[0].clientWidth;
@@ -13,6 +14,7 @@ const slides = document.querySelector('.slides');
     showSlide(currentIndex);
   });
 
+  //console.log(3 % 3)
   document.getElementById('next').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
