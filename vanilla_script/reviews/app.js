@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function() {
     info.textContent = item.text;
 });
 
-function showPerson(person) {
+function show(person) {
     const item = reviews[person];
     img.src = item.img;
     names.textContent = item.name;
@@ -61,20 +61,22 @@ btn2.addEventListener('click', function() {
     if (currentItem > reviews.length -1) {
         currentItem = 0;
     }
-    showPerson(currentItem);
+    show(currentItem);
 })
  
 btn1.addEventListener('click', function() {
     currentItem--
     if(currentItem < 0) {
+        console.log(currentItem)
         currentItem = reviews.length -1
     }
-    showPerson(currentItem)
+    show(currentItem)
+    console.log(currentItem)
 })
 
 btn.addEventListener('click', function() {
-    console.log('hello');
+    //console.log('hello');
 
     currentItem = Math.floor(Math.random() * reviews.length);
-    showPerson(currentItem);
+    show(currentItem);
 })

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font */
+
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* questions */
+
+body {
+    font-family: 'Ownglyph_corncorn-Rg';
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    font-size: 20px;
+}
+
+.questions {
+    width: 1000px;
+    height: 570px;
+}
+
+.question {
+    width: 100%;
+    height: 190px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: bisque;
+    border: 3px solid gold;
+    font-size: 20px;
+    border-radius: 5px;
+    color: goldenrod;
+    padding-inline: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.remove-btn {
+    display: none;
+}
+
+.btn:hover {
+    transform: rotate(90deg);
+}
+
+.question-answer {
+    margin-top: 80px;
+    padding-inline: 20px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.show-answer .question-answer {
+    opacity: 1;
+}
+
+.show-answer .show-btn {
+    display: none;
+}
+.show-answer .remove-btn {
+    display: block; 
+}
