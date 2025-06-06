@@ -81,6 +81,7 @@ function showNextSlide() {
     slides.style.transform = `translateX(-${currentIndex * 1536}px)`
 
     currentIndex += direction
+    //console.log(currentIndex)
 
     if(currentIndex === total -1) {
         direction = -1
