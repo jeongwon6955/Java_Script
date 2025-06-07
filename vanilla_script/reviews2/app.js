@@ -40,8 +40,8 @@ prev.addEventListener('click', function(){
         currentItem = reviews.length -1
     }
     show(currentItem);
-    pro.classList.remove('show-pro')
-    pro1.classList.remove('show-pro1')
+    pro.classList.remove('show-pro');
+    pro1.classList.remove('show-pro1');
 });
 
 
@@ -51,16 +51,16 @@ next.addEventListener('click', function() {
         currentItem = 0
     }
     show(currentItem)
-    pro.classList.remove('show-pro')
-    pro1.classList.remove('show-pro1')
+    pro.classList.remove('show-pro');
+    pro1.classList.remove('show-pro1');
 })
 
 probtn.addEventListener('click', function() {
     if(currentItem === 0) {
-        pro.classList.toggle('show-pro')
+        pro.classList.toggle('show-pro');
     }else {
-        pro1.classList.toggle('show-pro1')
+        pro1.classList.toggle('show-pro1');
     }
-})
+});
 
 
