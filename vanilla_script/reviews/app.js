@@ -67,11 +67,11 @@ btn2.addEventListener('click', function() {
 btn1.addEventListener('click', function() {
     currentItem--
     if(currentItem < 0) {
-        console.log(currentItem)
+        //console.log(currentItem)
         currentItem = reviews.length -1
     }
     show(currentItem)
-    console.log(currentItem)
+    //console.log(currentItem)
 })
 
 btn.addEventListener('click', function() {
