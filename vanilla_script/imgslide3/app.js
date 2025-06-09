@@ -24,7 +24,8 @@ const slides = document.querySelector('.slides');
   setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
-  }, 3000);
+  }, 1000);
+
 
   // 윈도우 크기 변경 시에도 슬라이드 위치 재계산
   window.addEventListener('resize', () => {

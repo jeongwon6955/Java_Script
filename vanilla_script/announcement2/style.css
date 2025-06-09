@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'BagelFatOne-Regular';
+}
+
+/* font */
+
+@font-face {
+    font-family: 'BagelFatOne-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-box {
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100vh;
+}
+
+.subbox {
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    position: relative;
+    top: -632px;
+    opacity: 0.7;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 40px;
+}
